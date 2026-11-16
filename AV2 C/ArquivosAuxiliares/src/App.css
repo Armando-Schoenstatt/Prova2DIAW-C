@@ -18,22 +18,21 @@
   gap: 0.8rem;
   padding: 1rem;
   background: var(--grafite);
-  border: 3px solid transparent;
-  border-radius: 18px;
-  box-shadow: 0 12px 22px rgba(0, 0, 0, 0.18);
-  transition: transform 0.2s ease, outline 0.2s ease;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  transition: border-color 0.2s ease;
 }
 
 .card:hover {
-  transform: translateY(-4px);
+  border-color: var(--cinza);
 }
 
 .card-indicado {
-  border-color: var(--ouro);
+  border-color: rgba(212, 175, 55, 0.65);
 }
 
 .card-suspenso {
-  border-color: var(--amarelo);
+  border-color: rgba(250, 204, 21, 0.65);
 }
 
 .card-elenco {
@@ -42,9 +41,9 @@
 }
 
 .card-selecionado {
-  outline: 5px solid var(--gramado);
-  outline-offset: 4px;
-  transform: translateY(-8px);
+  border-color: var(--gramado);
+  outline: 2px solid var(--gramado);
+  outline-offset: 2px;
 }
 
 .card-foto {
@@ -135,10 +134,10 @@
   gap: 1rem;
   margin-top: 2rem;
   padding: 1rem 1.2rem;
-  background: rgba(10, 10, 10, 0.96);
-  border: 2px solid var(--ouro);
-  border-radius: 14px;
-  box-shadow: 0 -10px 24px rgba(0, 0, 0, 0.28);
+  background: var(--grafite);
+  border: 1px solid var(--grafite-claro);
+  border-top: 2px solid var(--ouro);
+  border-radius: 10px;
 }
 
 .confirmacao span {
@@ -154,8 +153,8 @@
 .historico {
   margin-top: 2rem;
   background: var(--grafite);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 16px;
+  border: 1px solid var(--grafite-claro);
+  border-radius: 12px;
   padding: 1.4rem;
 }
 
@@ -184,9 +183,9 @@
 }
 
 .bloco-jogadores {
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  border-radius: 16px;
+  background: var(--grafite);
+  border: 1px solid var(--grafite-claro);
+  border-radius: 12px;
   padding: 1.2rem;
 }
 
@@ -231,9 +230,9 @@
 }
 
 .disputa-lideranca {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 12px;
+  background: var(--grafite);
+  border: 1px solid var(--grafite-claro);
+  border-radius: 10px;
   padding: 1rem 1.2rem;
   margin-bottom: 1.2rem;
 }
@@ -250,8 +249,8 @@
 
 .placar {
   padding: 1rem;
-  border: 2px solid var(--grafite-claro);
-  border-radius: 16px;
+  border: 1px solid var(--grafite-claro);
+  border-radius: 12px;
   background: var(--grafite);
 }
 
@@ -345,8 +344,8 @@
   max-width: 640px;
   margin: 3rem auto 0;
   background: var(--grafite);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 18px;
+  border: 1px solid var(--grafite-claro);
+  border-radius: 12px;
   padding: 2rem;
   text-align: center;
 }
